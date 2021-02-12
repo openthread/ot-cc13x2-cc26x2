@@ -35,13 +35,12 @@ In a Bash terminal, follow these instructions to build the cc2652 examples.
 
 ```bash
 $ cd <path-to-ot-cc13x2-cc26x2>
-$ cd <path-to-openthread>
 $ ./script/build -DTI_PLATFORM=cc2652
 ```
 
 ## Flash Binaries
 
-If the build completed successfully, the `elf` files may be found in `<path-to-ot-cc13x2-cc26x2>/openthread/examples/apps/`.
+If the build completed successfully, the `elf` files may be found in `<path-to-ot-cc13x2-cc26x2>/build/bin/`.
 
 Flash the images with [Uniflash][uniflash]. Make sure to deselect the binary check-box, Uniflash assumes a file without an extension is a binary file.
 
