@@ -27,7 +27,7 @@
 #
 
 cmake_minimum_required(VERSION 3.10.2)
-project(ot-cc2538 VERSION 0.2.0)
+project(ot-cc13x2-cc26x2 VERSION 0.2.0)
 
 set(TI_PLATFORM_VALUES
     "cc1352"
@@ -38,11 +38,11 @@ if(NOT TI_PLATFORM IN_LIST TI_PLATFORM_VALUES)
     message(FATAL_ERROR "Please select a supported platform: ${TI_PLATFORM_VALUES}")
 endif()
 
-if(TI_PLATFORM STREQUAL "cc1352")
-    set(OT_PLATFORM_LIB "openthread-cc1352")
-elseif(TI_PLATFORM STREQUAL "cc2652")
-    set(OT_PLATFORM_LIB "openthread-cc2652")
-endif()
+set(OT_PLATFORM_LIB "openthread-${TI_PLATFORM}")
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
 add_subdirectory(openthread)
 
