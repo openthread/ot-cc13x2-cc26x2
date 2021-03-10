@@ -52,4 +52,4 @@ Flash the images with [Uniflash][uniflash]. Make sure to deselect the binary che
 2. Type `help` for list of commands.
 3. See [OpenThread CLI Reference README.md][cli] to learn more.
 
-[cli]: https://github.com/openthread/openthread/blob/master/src/cli/README.md
+[cli]: https://github.com/openthread/openthread/blob/main/src/cli/README.md
