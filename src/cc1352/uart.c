@@ -41,9 +41,9 @@
 
 #include <openthread/platform/debug_uart.h>
 #include <openthread/platform/logging.h>
-#include <openthread/platform/uart.h>
 
 #include "utils/code_utils.h"
+#include "utils/uart.h"
 
 #include <utils/code_utils.h>
 
