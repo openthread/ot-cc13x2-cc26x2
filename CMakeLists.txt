@@ -50,7 +50,6 @@ target_compile_definitions(ot-config INTERFACE
     OPENTHREAD_CONFIG_FILE="openthread-core-${TI_PLATFORM}-config.h"
     OPENTHREAD_PROJECT_CORE_CONFIG_FILE="openthread-core-${TI_PLATFORM}-config.h"
     OPENTHREAD_CORE_CONFIG_PLATFORM_CHECK_FILE="openthread-core-${TI_PLATFORM}-config-check.h"
-    OPENTHREAD_CONFIG_NCP_UART_ENABLE=1
 )
 
 target_include_directories(ot-config INTERFACE
