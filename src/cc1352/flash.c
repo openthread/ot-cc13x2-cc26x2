@@ -42,7 +42,8 @@
 #define FLASH_BASE_ADDRESS 0x52000
 #define FLASH_PAGE_SIZE 0x2000
 #define FLASH_PAGE_NUM 2 /* must be a multiple of 2 */
-#define FLASH_SWAP_SIZE (FLASH_PAGE_SIZE * (FLASH_PAGE_NUM / 2))
+#define FLASH_SWAP_PAGE_NUM (FLASH_PAGE_NUM / 2)
+#define FLASH_SWAP_SIZE (FLASH_PAGE_SIZE * FLASH_SWAP_PAGE_NUM)
 
 enum
 {
@@ -179,7 +180,7 @@ void otPlatFlashErase(otInstance *aInstance, uint8_t aSwapIndex)
 
     mode = disableFlashCache();
 
-    for (uint8_t page = 0; page < FLASH_PAGE_NUM; page++)
+    for (uint8_t page = 0; page < FLASH_SWAP_PAGE_NUM; page++)
     {
         FlashSectorErase(mapAddress(aSwapIndex, (page * FLASH_PAGE_SIZE)));
     }
