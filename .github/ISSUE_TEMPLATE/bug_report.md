@@ -17,4 +17,3 @@ about: Create a report to help us improve
 **Console/log output** If applicable, add console/log output to help explain your problem.
 
 **Additional context** Add any other context about the problem here.
-
