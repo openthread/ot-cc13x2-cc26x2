@@ -41,7 +41,6 @@ Please only use the OpenThread name and marks when accurately referencing this s
 
 OpenThread support is available on GitHub:
 
-- Bugs and feature requests pertaining to the OpenThread on CC13x2/CC26x2 Examples — [submit to the openthread/ot-cc13x2 Issue Tracker](https://github.com/openthread/ot-cc13x2/issues)
+- Bugs and feature requests pertaining to the OpenThread on CC13x2/CC26x2 Examples — [submit to the openthread/ot-cc13x2-cc26x2 Issue Tracker](https://github.com/openthread/ot-cc13x2-cc26x2/issues)
 - OpenThread bugs and feature requests — [submit to the OpenThread Issue Tracker](https://github.com/openthread/openthread/issues)
 - Community Discussion - [ask questions, share ideas, and engage with other community members](https://github.com/openthread/openthread/discussions)
-
