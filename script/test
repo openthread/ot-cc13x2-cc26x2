@@ -29,9 +29,10 @@
 
 set -euxo pipefail
 
-readonly OT_BUILDDIR="$(pwd)/build"
+OT_BUILDDIR="$(pwd)/build"
+readonly OT_BUILDDIR
 
-readonly OT_OPTIONS=(
+OT_OPTIONS=(
     "-DOT_COMPILE_WARNING_AS_ERROR=ON"
     "-DOT_COMMISSIONER=ON"
     "-DOT_DHCP6_CLIENT=ON"
@@ -39,6 +40,7 @@ readonly OT_OPTIONS=(
     "-DOT_DNS_CLIENT=ON"
     "-DOT_JOINER=ON"
 )
+readonly OT_OPTIONS
 
 main()
 {

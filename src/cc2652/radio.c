@@ -1709,7 +1709,7 @@ void otPlatRadioGetIeeeEui64(otInstance *aInstance, uint8_t *aIeeeEui64)
 {
     OT_UNUSED_VARIABLE(aInstance);
 
-    uint8_t *    eui64;
+    uint8_t     *eui64;
     unsigned int i;
 
     /*
@@ -1838,7 +1838,7 @@ exit:
     return;
 }
 
-static void cc2652RadioProcessTransmitDone(otInstance *  aInstance,
+static void cc2652RadioProcessTransmitDone(otInstance   *aInstance,
                                            otRadioFrame *aTransmitFrame,
                                            otRadioFrame *aAckFrame,
                                            otError       aTransmitError)
@@ -1876,7 +1876,7 @@ static void cc2652RadioProcessReceiveDone(otInstance *aInstance, otRadioFrame *a
 
 static void cc2652RadioProcessReceiveQueue(otInstance *aInstance)
 {
-    rfc_ieeeRxCorrCrc_t *   crcCorr;
+    rfc_ieeeRxCorrCrc_t    *crcCorr;
     rfc_dataEntryGeneral_t *curEntry, *startEntry;
     uint8_t                 rssi;
 
