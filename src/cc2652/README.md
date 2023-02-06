@@ -48,7 +48,7 @@ Flash the images with [Uniflash][uniflash]. Make sure to deselect the binary che
 
 ## Interact
 
-1. Open terminal to the com port associated with the cc1352 UART (serial port settings: 115200 8-N-1).
+1. Open terminal to the com port associated with the cc2652 UART (serial port settings: 115200 8-N-1).
 2. Type `help` for list of commands.
 3. See [OpenThread CLI Reference README.md][cli] to learn more.
 
