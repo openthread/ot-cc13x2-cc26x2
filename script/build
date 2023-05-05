@@ -37,6 +37,7 @@ readonly OT_SRCDIR
 OT_OPTIONS=(
     "-DCMAKE_TOOLCHAIN_FILE=src/arm-none-eabi.cmake"
     "-DCMAKE_BUILD_TYPE=MinSizeRel"
+    "-DBUILD_TESTING=off"
     "-DOT_PLATFORM=external"
     "-DOT_SLAAC=ON"
 )
