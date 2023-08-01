@@ -47,8 +47,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 add_subdirectory(openthread)
 
 target_compile_definitions(ot-config INTERFACE
-    OPENTHREAD_CONFIG_FILE="openthread-core-${TI_PLATFORM}-config.h"
-    OPENTHREAD_PROJECT_CORE_CONFIG_FILE="openthread-core-${TI_PLATFORM}-config.h"
+    OPENTHREAD_PLATFORM_CORE_CONFIG_FILE="openthread-core-${TI_PLATFORM}-config.h"
     OPENTHREAD_CORE_CONFIG_PLATFORM_CHECK_FILE="openthread-core-${TI_PLATFORM}-config-check.h"
 )
 
